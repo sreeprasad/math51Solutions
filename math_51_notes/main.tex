@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amsthm, enumitem, hyperref}
+
+% Page formatting
+\usepackage[margin=1in]{geometry}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0em}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Custom commands
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+% Title Page
+\title{Math 51 Notes}
+\author{Your Name}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% Chapter 1
+\section{Chapter 1: Title of Chapter 1}
+
+\subsection{Exercise 4.1}
+
+\begin{enumerate}
+    \item[(a)] \input{exercises/exercise_4_1_a}
+    \item[(b)] \input{exercises/exercise_4_1_b}
+    \item[(c)] \input{exercises/exercise_4_1_c}
+    \item[(d)] \input{exercises/exercise_4_1_d}
+\end{enumerate}
+
+\subsection{Exercise 4.2}
+\input{exercises/exercise_4_2}
+\subsection{Exercise 4.3}
+\input{exercises/exercise_4_3}
+\subsection{Exercise 4.4}
+\input{exercises/exercise_4_4}
+\subsection{Exercise 4.5}
+\input{exercises/exercise_4_5}
+\subsection{Exercise 4.6}
+\input{exercises/exercise_4_6}
+
+\end{document}

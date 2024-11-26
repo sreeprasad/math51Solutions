@@ -1,0 +1,135 @@
+\[
+    \left\{
+    \begin{bmatrix}
+    x \\ y \\ z
+    \end{bmatrix}
+    \in \mathbb{R}^3 : 
+    \begin{aligned}
+    3x - y + z &= 0, \\
+    x + y - 4z &= 0
+    \end{aligned}
+    \right\}
+\]
+A set of vectors \( S \subseteq \mathbb{R}^n \) is a linear subspace if and only if:
+\begin{enumerate}
+    \item The zero vector is in \( S \).
+    \item \( S \) is closed under vector addition: if \( \mathbf{u}, \mathbf{v} \in S \), then \( \mathbf{u} + \mathbf{v} \in S \).
+    \item \( S \) is closed under scalar multiplication: if \( \mathbf{u} \in S \) and \( c \in \mathbb{R} \), then \( c \cdot \mathbf{u} \in S \).
+\end{enumerate}
+
+
+Checking each condition:
+\begin{enumerate}
+    \item \textbf{The zero vector is in \( S \).}
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    0 \\ 0 \\ 0
+    \end{bmatrix}
+    \]
+    Check if it satisfies 
+    \[
+     \begin{aligned}
+    3x - y + z &= 0, \\
+    x + y - 4z &= 0
+    \end{aligned}
+    \]
+     \[
+    3 \cdot 0 - 0 + 0 = 0
+    \]
+     \[
+    0 + 0 - 4.0 = 0
+    \]
+    This is true, so the zero vector is in the set.
+  \item 
+   \item \textbf{\( S \) is closed under vector addition.}
+
+    Let 
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    x_1 \\ y_1 \\ z_1
+    \end{bmatrix}, \quad 
+    \mathbf{v} = 
+    \begin{bmatrix} 
+    x_2 \\ y_2 \\ z_2
+    \end{bmatrix}.
+    \]
+
+    \[
+    \mathbf{u} + \mathbf{v} = 
+    \begin{bmatrix} 
+    x_1 + x_2 \\ y_1 + y_2 \\ z_1 + z_2
+    \end{bmatrix}.
+    \]
+    \[
+     \begin{aligned}
+    3x - y + z &= 0, \\
+    x + y - 4z &= 0
+    \end{aligned}
+    \]
+    
+    \[
+     z = -3x + y \]
+    \[
+     z = (x+y)/4
+    \]
+    
+    \[
+    z_1 + z_2 = -3(x_1+x_2) +y
+    \]
+    \[
+    -3(x_1)+y_1 + -3(x_2)+y_2 = -3(x_1+x_2) +y_1+y_2
+    \]
+    \[
+    -3(x_1+x_2)+y_1+y_2 = -3(x_1+x_2) +y_1+y_2
+    \]
+    
+    \[
+    z1 + z_2 = (x_1+x_2+y_1+y_2)/4
+    \]
+    \[
+    (x_1+y_1)/4 + (x_2+y_2)/4 = (x_1+x_2+y_1+y_2)/4
+    \]
+    \[
+    (x_1+y_1 + x_2+y_2)/4 = (x_1+x_2+y_1+y_2)/4
+    \]
+    This is true so \( S \) is closed under vector addition.
+    \item \textbf{\( S \) is closed under scalar multiplication.}
+
+    Let
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    x  \\ y \\ z
+    \end{bmatrix}.
+    \]
+    \[
+    c \cdot \mathbf{u} = 
+    \begin{bmatrix} 
+    cx  \\ cy \\ cz
+    \end{bmatrix}.
+    \]
+    \[
+    cz = -3cx_1+cy_1
+    \]
+     \[
+    c(-3x_1+y_1) = -3cx_1+cy_1
+    \]
+     \[
+    -3cx_1+cy_1 = -3cx_1+cy_1
+    \]
+
+    \[
+    cz_1 = (cx_1 +cy_1)/4
+    \]
+
+     \[
+    c(x_1+y_1)/4 = (cx_1 +cy_1)/4
+    \]
+     \[
+     (cx_1+cy_1)/4 = (cx_1 +cy_1)/4
+    \]
+     This is true so \( S \) is closed under scalar multiplication.
+     So this is a linear subspace.
+\end{enumerate}

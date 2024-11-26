@@ -1,0 +1,66 @@
+\[
+\left\{
+\begin{bmatrix}
+x \\ y
+\end{bmatrix}
+\in \mathbb{R}^2 : y = x^2
+\right\}
+    \]
+A set of vectors \( S \subseteq \mathbb{R}^n \) is a linear subspace if and only if:
+\begin{enumerate}
+    \item The zero vector is in \( S \).
+    \item \( S \) is closed under vector addition: if \( \mathbf{u}, \mathbf{v} \in S \), then \( \mathbf{u} + \mathbf{v} \in S \).
+    \item \( S \) is closed under scalar multiplication: if \( \mathbf{u} \in S \) and \( c \in \mathbb{R} \), then \( c \cdot \mathbf{u} \in S \).
+\end{enumerate}
+
+
+Checking each condition:
+\begin{enumerate}
+    \item \textbf{The zero vector is in \( S \).}
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    0 \\ 0 
+    \end{bmatrix}
+    \]
+    Check if it satisfies \( y = x^2 \): 
+    \[
+    0 = 0^2 = 0
+    \]
+
+This is true, so the zero vector is in the set.
+ \item \( S \) is closed under vector addition: if \( \mathbf{u}, \mathbf{v} \in S \), then \( \mathbf{u} + \mathbf{v} \in S \).
+
+
+ Let 
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    x_1 \\ y_1
+    \end{bmatrix}, \quad 
+    \mathbf{v} = 
+    \begin{bmatrix} 
+    x_2 \\ y_2
+    \end{bmatrix}.
+    \]
+
+    \[
+    \mathbf{u} + \mathbf{v} = 
+    \begin{bmatrix} 
+    x_1 + x_2 \\ y_1 + y_2
+    \end{bmatrix}.
+    \]
+
+    \[
+    y_1 + y_2 = (x_1 + x_2)^2
+    \]
+    Here
+    \[
+    y1 = x1^2, y2 = x2^2
+    \]
+    \[
+    y1+y2 = x1^2 + x2^2 \neq (x1+x2)^2
+    \]
+\( S \) is NOT closed under vector addition. So this is not a linear subspace.
+    
+\end{enumerate}

@@ -1,0 +1,91 @@
+
+
+Find a nonzero 3-vector \(\mathbf{v}\) so that
+\[
+\left\{
+\mathbf{x} \in \mathbb{R}^3 : \mathbf{x} \cdot 
+\begin{bmatrix}
+3 \\
+2 \\
+1
+\end{bmatrix} 
+= 0, \, 
+\mathbf{x} \cdot 
+\begin{bmatrix}
+-2 \\
+-1 \\
+1
+\end{bmatrix} 
+= 0
+\right\}
+= \text{span}(\mathbf{v}).
+\]
+Then, using the \textit{geometric} fact that any two different planes through the origin in \(\mathbb{R}^3\) meet along a line through the origin, interpret this algebraic outcome that the left side is the span of a single vector.
+
+Solution:
+
+Let a,b,c be scalar so that 
+
+\[
+3a+2b+c=0
+\]
+\begin{equation}
+    b = \frac{-c-3a}{2}
+\end{equation}
+\[
+-2a-b+c=0
+\]
+\[
+-2a- \frac{-c-3a}{2}+c=0
+\]
+\[
+c=\frac{a}{3}
+\]
+\[
+2b=-\frac{a}{3}-3a
+\]
+\[
+b=-\frac{5a}{3}
+\]
+writing v in terms of a,
+\[
+\begin{bmatrix}
+a \\
+-\frac{5a}{3} \\
+\frac{a}{3}
+\end{bmatrix} 
+\]
+
+\[
+v =
+a .  \begin{bmatrix}
+1\\
+-\frac{5}{3} \\
+\frac{1}{3}
+\end{bmatrix} 
+\]
+The two planes defined by the equations
+\begin{equation}
+    3a+2b+c=0
+\end{equation}
+\begin{equation}
+    -2a-b+c=0
+\end{equation}
+intersect along a line through the origin in \(\mathbb{R}^3\)
+This line is spanned by the vector v. Hence, the solution set is
+\[
+a .  \begin{bmatrix}
+1\\
+-\frac{5}{3} \\
+\frac{1}{3}
+\end{bmatrix} 
+\]
+Here a $\neq$ 0
+so the span is
+\[
+\begin{bmatrix}
+1\\
+-\frac{5}{3} \\
+\frac{1}{3}
+\end{bmatrix} 
+\]

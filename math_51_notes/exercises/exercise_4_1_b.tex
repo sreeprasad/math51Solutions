@@ -1,0 +1,34 @@
+\[
+\left\{
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+\in \mathbb{R}^3 : z = 1 + 2x - y
+\right\}
+\]
+
+A set of vectors \( S \subseteq \mathbb{R}^n \) is a linear subspace if and only if:
+\begin{enumerate}
+    \item The zero vector is in \( S \).
+    \item \( S \) is closed under vector addition: if \( \mathbf{u}, \mathbf{v} \in S \), then \( \mathbf{u} + \mathbf{v} \in S \).
+    \item \( S \) is closed under scalar multiplication: if \( \mathbf{u} \in S \) and \( c \in \mathbb{R} \), then \( c \cdot \mathbf{u} \in S \).
+\end{enumerate}
+
+
+Checking each condition:
+\begin{enumerate}
+    \item \textbf{The zero vector is in \( S \).}
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    0 \\ 0 \\ 0
+    \end{bmatrix}
+    \]
+    Check if it satisfies \( z = 1 + 2x - y \): 
+    \[
+    2 \cdot 0 - 0 = 1 \neq 0
+    \]
+
+This is false, so the zero vector is not in the set.
+So this is not a linear subspace.
+\end{enumerate}

@@ -1,0 +1,94 @@
+\[
+\left\{
+\begin{bmatrix}
+x \\ y \\ z
+\end{bmatrix}
+\in \mathbb{R}^3 : z = 2x - y
+\right\}
+\]
+
+A set of vectors \( S \subseteq \mathbb{R}^n \) is a linear subspace if and only if:
+\begin{enumerate}
+    \item The zero vector is in \( S \).
+    \item \( S \) is closed under vector addition: if \( \mathbf{u}, \mathbf{v} \in S \), then \( \mathbf{u} + \mathbf{v} \in S \).
+    \item \( S \) is closed under scalar multiplication: if \( \mathbf{u} \in S \) and \( c \in \mathbb{R} \), then \( c \cdot \mathbf{u} \in S \).
+\end{enumerate}
+
+Checking each condition:
+\begin{enumerate}
+    \item \textbf{The zero vector is in \( S \).}
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    0 \\ 0 \\ 0
+    \end{bmatrix}
+    \]
+    Check if it satisfies \( z = 2x - y \): 
+    \[
+    2 \cdot 0 - 0 = 0.
+    \]
+    This is true, so the zero vector is in the set.
+
+    \item \textbf{\( S \) is closed under vector addition.}
+
+    Let 
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    x_1 \\ y_1 \\ z_1
+    \end{bmatrix}, \quad 
+    \mathbf{v} = 
+    \begin{bmatrix} 
+    x_2 \\ y_2 \\ z_2
+    \end{bmatrix}.
+    \]
+
+    \[
+    \mathbf{u} + \mathbf{v} = 
+    \begin{bmatrix} 
+    x_1 + x_2 \\ y_1 + y_2 \\ z_1 + z_2
+    \end{bmatrix}.
+    \]
+
+    \[
+    z_1 + z_2 = 2 \cdot (x_1 + x_2) - (y_1 + y_2).
+    \]
+
+    \[
+    z_1 = 2 \cdot x_1 - y_1, \quad z_2 = 2 \cdot x_2 - y_2.
+    \]
+
+    \[
+    z_1 + z_2 = 2 \cdot (x_1 + x_2) - (y_1 + y_2).
+    \]
+    Thus, the set is closed under addition.
+
+    \item \textbf{\( S \) is closed under scalar multiplication.}
+
+    Let
+    \[
+    \mathbf{u} = 
+    \begin{bmatrix} 
+    x  \\ y \\ z
+    \end{bmatrix}.
+    \]
+    \[
+    c \cdot \mathbf{u} = 
+    \begin{bmatrix} 
+    cx  \\ cy \\ cz
+    \end{bmatrix}.
+    \]
+
+    \[
+    cz = 2 \cdot (cx) - (cy).
+    \]
+    But 
+    \[
+    z = 2x - y.
+    \]
+    So 
+    \[
+    cz = c (2x-y) = 2 \cdot (cx) - (cy).
+    \]
+    Thus, the set is closed under scalar multiplication. So this is a linear subspace.
+\end{enumerate}
