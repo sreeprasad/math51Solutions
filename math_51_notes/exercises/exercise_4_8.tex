@@ -1,0 +1,227 @@
+Use Theorem 4.2.5 to determine the dimension (1, 2, or 3) of each of the following linear subspaces in $\mathbb{R}^3$. Show the work to justify your answer.
+
+\begin{enumerate}
+    \item[(a)] $\text{span}(\mathbf{v}, \mathbf{w})$ for 
+    \[
+    \mathbf{v} =
+    \begin{bmatrix}
+    -2 \\ 1 \\ 1
+    \end{bmatrix},
+    \quad
+    \mathbf{w} =
+    \begin{bmatrix}
+    1 \\ 1 \\ 1
+    \end{bmatrix}.
+    \]
+    \item[(b)] $\text{span}(\mathbf{v'}, \mathbf{w'})$ for 
+    \[
+    \mathbf{v'} =
+    \begin{bmatrix}
+    3 \\ 6 \\ -2
+    \end{bmatrix},
+    \quad
+    \mathbf{w'} =
+    \begin{bmatrix}
+    -2 \\ -4 \\ 2
+    \end{bmatrix}.
+    \]
+    \item[(c)] $\text{span}(\mathbf{v''}, \mathbf{w''},\mathbf{u''})$ for 
+    \[
+    \mathbf{v''} =
+    \begin{bmatrix}
+    1 \\ -2 \\ 3
+    \end{bmatrix},
+    \quad
+    \mathbf{w''} =
+    \begin{bmatrix}
+    4 \\ 0 \\ 2
+    \end{bmatrix},
+    \quad
+    \mathbf{u''} =
+    \begin{bmatrix}
+    3 \\ -2 \\ 4
+    \end{bmatrix}.
+    \]
+\end{enumerate}
+
+Solution:
+
+\begin{enumerate}
+    \item[(a)] $\text{span}(\mathbf{v}, \mathbf{w})$ for 
+    \[
+    \mathbf{v} =
+    \begin{bmatrix}
+    -2 \\ 1 \\ 1
+    \end{bmatrix},
+    \quad
+    \mathbf{w} =
+    \begin{bmatrix}
+    1 \\ 1 \\ 1
+    \end{bmatrix}.
+    \]
+
+    Here check if we can combine u and v such that they cancel out each other.
+    This can be checked by finding out a , b such that 
+    \[
+    a.v + b.w = 0
+    \]
+    a.v  means we are stretching (or shrinking) v by a. 
+    similar for b.w
+    by combining a.v+b.w, we get a new vector if this new vector is 0 then they cancel each other.
+    If we find non-zero values of a and b such a.v+b.w  is 0 then it means v, w are linearly dependent.  If the only solution is a=0 and b=0 then then v, w are linearly independent and v and we point to different directions.
+
+    \[
+     a.v + b.w = 0
+    \]
+    \[
+     a.\begin{bmatrix}
+    -2 \\ 1 \\ 1
+    \end{bmatrix} + b.\begin{bmatrix}
+    1 \\ 1 \\ 1
+    \end{bmatrix}
+     = 0
+    \]
+    This gives
+    \[
+    -2a +b =0
+    \]
+    \[
+    a +b =0
+    \]
+    \[
+    a +b =0
+    \]
+    Substituting 
+    \[
+    a=-b
+    \]
+    \[
+    -2(-b)+b=0
+    \]
+    Therefore
+    \[
+    b=0
+    \]
+    \[
+    a=0
+    \]
+    This means v and w are independent.  Together v and w span a plane which has dimension 2.
+
+    
+    
+    \item[(b)] $\text{span}(\mathbf{v'}, \mathbf{w'})$ for 
+    \[
+    \mathbf{v'} =
+    \begin{bmatrix}
+    3 \\ 6 \\ -2
+    \end{bmatrix},
+    \quad
+    \mathbf{w'} =
+    \begin{bmatrix}
+    -2 \\ -4 \\ 2
+    \end{bmatrix}.
+    \]
+
+    Similar to (a) we have 
+    a.v + b.w = 0
+    \[
+    a.\begin{bmatrix}
+    3 \\ 6 \\ -2
+    \end{bmatrix} + b.\begin{bmatrix}
+    -2 \\ -4 \\ 2
+    \end{bmatrix} = 0
+    \]
+
+   Now we have
+    \[
+      3a - 2b =0 
+    \]
+    \[
+      6a - 4b =0 
+    \]
+    \[
+      -2a + 2b =0 
+    \]
+    Substituting
+    \[
+    a = b
+    \]
+    we have 
+    \[
+    6(b)-4b=0
+    \]
+    From this we have
+     \[
+    b=0
+    \]
+     \[
+    a=0
+    \]
+
+   This means v' and w' are independent.  Together v' and w' span a plane which has dimension 2.
+    
+    \item[(c)] $\text{span}(\mathbf{v''}, \mathbf{w''},\mathbf{u''})$ for 
+    \[
+    \mathbf{v''} =
+    \begin{bmatrix}
+    1 \\ -2 \\ 3
+    \end{bmatrix},
+    \quad
+    \mathbf{w''} =
+    \begin{bmatrix}
+    4 \\ 0 \\ 2
+    \end{bmatrix},
+    \quad
+    \mathbf{u''} =
+    \begin{bmatrix}
+    3 \\ -2 \\ 4
+    \end{bmatrix}.
+    \]
+    Similar to (b) we have
+
+    a.v'' + b.w'' + c.u'' = 0
+    \[
+    a.\begin{bmatrix}
+    1 \\ -2 \\ 3
+    \end{bmatrix} 
+    + b .\begin{bmatrix}
+    4 \\ 0 \\ 2
+    \end{bmatrix}
+    + c . \begin{bmatrix}
+    3 \\ -2 \\ 4
+    \end{bmatrix} = 0
+    \]
+    \[
+    a+3b+3c = 0
+    \]
+    \[
+    -2a-2c = 0
+    \]
+     \[
+    3a+2b+4c = 0
+    \]
+    Substituting 
+    \[
+    a = c 
+    \]
+    \[
+    c+3b+3c = 0
+    \]
+    \[
+    b=\frac{-4}{3}c
+    \]
+    \[
+    3c+2.\frac{-4}{3}c+4c=0
+    \]
+    \[
+    a=0
+    \]
+    \[
+    b=0
+    \]
+    \[
+    c=0
+    \]
+    This means v'', w'' and u'' are independent and dimension is 3
+\end{enumerate}
+
