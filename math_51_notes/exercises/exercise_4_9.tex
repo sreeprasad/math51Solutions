@@ -1,0 +1,265 @@
+Consider the three nonzero vectors
+\[
+v_1 =
+\begin{bmatrix}
+1 \\
+-2 \\
+3
+\end{bmatrix}, \quad
+v_2 =
+\begin{bmatrix}
+2 \\
+0 \\
+1
+\end{bmatrix}, \quad
+v_3 =
+\begin{bmatrix}
+3 \\
+-2 \\
+1
+\end{bmatrix}.
+\]
+
+\begin{enumerate}
+    \item[(a)] Show that $v_1$ does not belong to the span of $v_2$ and $v_3$. (Hint: if $v_1 = a v_2 + b v_3$ for some scalars $a$ and $b$, express this as a system of 3 equations on $a$ and $b$ and show that these equations have no simultaneous solution.)
+    \item[(b)] Similarly show $v_2$ does not belong to the span of $v_1$ and $v_3$, and that $v_3$ does not belong to the span of $v_1$ and $v_2$.
+    \item[(c)] Using (a) and (b), apply Theorem 4.2.5 to conclude that the linear subspace $V = \text{span}(v_1, v_2, v_3)$ in $\mathbb{R}^3$ has dimension equal to 3 (so it coincides with $\mathbb{R}^3$, by Theorem 4.2.8).
+\end{enumerate}
+
+Solution:
+
+
+\begin{enumerate}
+    \item[(a)] Show that $v_1$ does not belong to the span of $v_2$ and $v_3$. (Hint: if $v_1 = a v_2 + b v_3$ for some scalars $a$ and $b$, express this as a system of 3 equations on $a$ and $b$ and show that these equations have no simultaneous solution.)
+
+    As the hint suggested, we want to find 2 scalar a and b and express
+    \[
+    v_1=av_2+cv_3
+    \]
+   
+    \[
+\begin{bmatrix}
+1 \\
+-2 \\
+3
+\end{bmatrix} =
+a .
+\begin{bmatrix}
+2 \\
+0 \\
+1
+\end{bmatrix} + 
+b .
+\begin{bmatrix}
+3 \\
+-2 \\
+1
+\end{bmatrix}
+\]
+\[
+1 = 2a + 3b
+\]
+\[
+-2 = -2b
+\]
+\[
+3 = a + b
+\]
+Substituting
+\[
+b=1
+\]
+\[
+3 = a + 1
+\]
+Solving we get
+\[
+a = 2
+\]
+\[
+b=1
+\]
+But if we put a=2 and b=1 in the first equation we get
+\[
+1 = 2(2) + 3(1) 
+\]
+\[
+1 \neq 7
+\]
+This shows that there is no simultaneous solution to these system of equations.
+This indicates that $v_1$ does not belong to the span of $v_2$ and $v_3$.
+    
+    
+    
+    
+    \item[(b)] Similarly show $v_2$ does not belong to the span of $v_1$ and $v_3$, and that $v_3$ does not belong to the span of $v_1$ and $v_2$.
+
+ \begin{enumerate}
+     \item[(i)] $v_2$ does not belong to the span of $v_1$ and $v_3$ 
+     \[
+     \begin{bmatrix}
+2 \\
+0 \\
+1
+\end{bmatrix} = a \begin{bmatrix}
+1 \\
+-2 \\
+3
+\end{bmatrix} + b . \begin{bmatrix}
+3 \\
+-2 \\
+1
+\end{bmatrix}
+     \]
+     \[
+     2 = a + 3b
+     \]
+      \[
+     0 = -2a - 2b
+     \]
+      \[
+     1 = 3a + b
+     \]
+     Substituting
+     \[
+     a = -b
+     \]
+     we get 
+     \[
+     1 = 3(-b)+b 
+     \]
+       \[
+     b=\frac{-1}{2}
+     \]
+     Substituting 
+     \[
+     a = \frac{1}{2}
+     \]
+     \[
+     b = \frac{-1}{2}
+     \]
+     in first equation we get
+     \[
+     2 = \frac{1}{2}+3\frac{-1}{2}
+     \]
+       \[
+     2 \neq -1
+     \]
+     This shows that there is no simultaneous solution to these system of equations.
+This indicates that $v_2$ does not belong to the span of $v_1$ and $v_3$.
+     
+      \item[(i)] $v_3$ does not belong to the span of $v_1$ and $v_2$ 
+      \[
+      \begin{bmatrix}
+3 \\
+-2 \\
+1
+\end{bmatrix} = a \begin{bmatrix}
+1 \\
+-2 \\
+3
+\end{bmatrix} + b .
+\begin{bmatrix}
+2 \\
+0 \\
+1
+\end{bmatrix}
+ \]
+ \[
+ 3 = a + 2b
+ \]
+ \[
+ -2 = -2a 
+ \]
+ \[
+ 1 = 3a + b
+ \]
+ Substituting
+ \[
+ a =1 
+ \]
+ we get 
+ \[
+ 1 = 3(1) + b 
+ \]
+  \[
+ b =-2
+ \]
+ Substituting
+ \[
+ a =1
+ \]
+ \[
+ b=-2
+ \]
+ in first equation
+ \[
+ 3 = 1 + 2(-2) 
+ \]
+ \[
+ 3 \neq -3
+ \]
+      This shows that there is no simultaneous solution to these system of equations.
+This indicates that $v_3$ does not belong to the span of $v_1$ and $v_2$.
+ \end{enumerate}
+
+    
+    
+    \item[(c)] Using (a) and (b), apply Theorem 4.2.5 to conclude that the linear subspace $V = \text{span}(v_1, v_2, v_3)$ in $\mathbb{R}^3$ has dimension equal to 3 (so it coincides with $\mathbb{R}^3$, by Theorem 4.2.8).
+
+    Finding 3 scalar such that \[
+    a.v_1 + b.v_2 + c.v_3 = 0
+    \]
+    \[
+    a . \begin{bmatrix}
+1 \\
+-2 \\
+3
+\end{bmatrix} + b .
+\begin{bmatrix}
+2 \\
+0 \\
+1
+\end{bmatrix} + c .
+\begin{bmatrix}
+3 \\
+-2 \\
+1
+\end{bmatrix} = 0
+\]
+\[
+a + 2b + 3c = 0
+\]
+\[
+-2a - 2c = 0
+\]
+\[
+3a + b + c = 0
+\]
+Substituting
+\[
+a = -c
+\]
+\[
+3(-c) +b + c = 0
+\]
+\[
+b = 2c
+\]
+\[
+-c + 2(2c) + 3c = 0
+\]
+\[
+c = 0
+\]
+\[
+b = 0
+\]
+\[
+a = 0
+\]
+This means $v_1$,  $v_2$,  $v_3$ are linearly independent vectors and they have a dimension of 3
+    
+\end{enumerate}
+
+
