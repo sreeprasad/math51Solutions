@@ -2,4 +2,4 @@
 Solutions to Stanford Math 51 Exerciese
 
 
-Last Exercise completed: Exercise 4.9
+Last Exercise completed: Exercise 4.10
