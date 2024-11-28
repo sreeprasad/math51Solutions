@@ -1,0 +1,143 @@
+
+Let $V$ be the span of the collection of three nonzero 3-vectors
+\[
+\mathbf{v}_1 = 
+\begin{bmatrix}
+1 \\ -2 \\ 3
+\end{bmatrix}, \quad
+\mathbf{v}_2 = 
+\begin{bmatrix}
+2 \\ 0 \\ 1
+\end{bmatrix}, \quad
+\mathbf{v}_3 = 
+\begin{bmatrix}
+3 \\ -2 \\ 1
+\end{bmatrix}.
+\]
+Here is an approach based on orthogonality to show $\dim V = 3$ (so $V = \mathbb{R}^3$, by Theorem 4.2.8).
+\begin{enumerate}
+\item[(a)] Explain either geometrically or algebraically why if the dimension were 1 or 2 then there would be a \textit{nonzero} 3-vector $\mathbf{n}$ orthogonal to the span (hint: show that for \textit{any} linear subspace of $\mathbb{R}^3$ with dimension 1 or 2 there is a nonzero 3-vector orthogonal to it).
+
+Solution
+
+These vectors $v_1,v_2,v_3$ could 
+\begin{enumerate}
+    \item[(i)] all point along the same line. This means they have dimension of 1. 
+    \item[(ii)] lie on a flat plane. This means they have dimension of 2.
+    \item[(iii)] fill the 3D space. This means they have dimension of 3.
+\end{enumerate}
+Algebraically this means,
+\[
+n. v_i = 0
+\]
+This means
+\[
+n . v_1 = 0
+\]
+\[
+n . v_2 = 0
+\]
+\[
+n . v_3 = 0
+\]
+where n is a non-zero vector 
+\[
+\begin{bmatrix}
+a \\ b \\ c
+\end{bmatrix}
+\]
+Solving the system of equations we get 
+\[
+a - 2b + 3c = 0
+\]
+\[
+2a + c = 0
+\]
+\[
+3a -2b + c  = 0
+\]
+Substituting 
+\[
+c = -2a
+\]
+we get
+\[
+3a - 2b + -2a = 0
+\]
+\[
+a = 2b
+\]
+\[
+(-2b) - 2b + 3(-2)(-2b) = 0
+\]
+\[
+b = 0
+\]
+\[
+a = 0
+\]
+\[
+c =0
+\]
+This means there is no nonzero vector n that is orthogonal to all three vectors $v_1, v_2, v_3$
+As there is no non-zero vector n satisfying 
+\[
+n. v_1 = 0
+\]
+\[
+n. v_2 = 0
+\]
+\[
+n. v_3 = 0
+\]
+The span of $v_1, v_2, v_3$ must have dimension 3.
+
+\begin{enumerate}
+    \item (a line): There would exist a plane of vectors (dimension 2) perpendicular to the line, meaning you could always find a nonzero vector n orthogonal to $v_1$
+    \item (a plane): There would exist a line of vectors (dimension 1) perpendicular to the plane, meaning you could always find a nonzero vector n orthogonal to both $v_1 and v_2$
+    \item (all of $\mathbb{R}^3$) There is no "room" left for a nonzero vector n to be perpendicular to the entire space. The only solution is the trivial vector n=0.
+\end{enumerate}
+
+
+
+
+\item[(b)] Check directly that the simultaneous conditions
+\[
+\mathbf{n} \cdot 
+\begin{bmatrix}
+1 \\ -2 \\ 3
+\end{bmatrix}
+= 0, \quad
+\mathbf{n} \cdot 
+\begin{bmatrix}
+2 \\ 0 \\ 1
+\end{bmatrix}
+= 0, \quad
+\mathbf{n} \cdot 
+\begin{bmatrix}
+3 \\ -2 \\ 1
+\end{bmatrix}
+= 0,
+\]
+on the entries of $\mathbf{n} = 
+\begin{bmatrix}
+a \\ b \\ c
+\end{bmatrix}$
+have no solution $(a, b, c) \neq (0, 0, 0)$.
+
+Solution: This is already shown above
+
+\item[(c)] Use the conclusion of (b) to rule out the possibilities of the dimension being 1 or 2 with the aid of (a) (so the dimension must be 3).
+
+Solution
+
+From part(b), we know that no non-zero vector n exists such that $n.v_1=0, n.v_2=0, n.v_3=0$
+If the span had dimension 1, then a plane of 2d vector would have exists orthogonal to span. But this contradicts the dimension = 3 concluded in part(b)
+
+If the span had dimension 2, then there would be atleast one non-zero vector orthogonal to the it.
+But the only orthogonal vector n is the zero vector.
+
+This means the only possibility is span having dimension 3.This aligns with the conclusion of part (b), which showed that the only n satisfying the orthogonality conditions is the zero vector.
+
+\end{enumerate}
+
