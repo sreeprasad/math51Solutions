@@ -1,5 +1,8 @@
 # math51Solutions
 Solutions to Stanford Math 51 Exerciese
 
+## In progress: Exercise 3.*
+- Solution to Exercise 3.1 completed
 
-Last Exercise completed: Exercise 4.10
+## Completed:
+- All problems in Exercise 4.* completed

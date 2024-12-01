@@ -1,0 +1,88 @@
+Consider the three different points $(3,-2,5)$, $(\frac{1}{2},0,4)$, and $(1,-2,10)$ in $\mathbb{R}^3$.
+
+(a) Use difference vectors to show these points are not on a common line, so there is exactly one plane $\mathcal{P}$ containing all of them.
+Let 
+\[
+P = (3,-2,5)
+\]
+\[
+Q = \frac{1}{2},0,4
+\]
+\[
+R = (1,-2,10)
+\]
+
+\[
+\overrightarrow{PQ} = Q - P = \begin{bmatrix}
+\frac{5}{2} \\ 2 \\ -1
+\end{bmatrix}
+\]
+
+\[
+\overrightarrow{PR} = R - P = \begin{bmatrix}
+-2 \\ 0 \\ 5
+\end{bmatrix}
+\]
+
+we need to check whether $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are linearly independent.
+There should not be any scalar a and b both non-zero such that
+\[
+a \overrightarrow{PQ} + b \overrightarrow{PR} = 0
+\]
+
+\[
+a . \begin{bmatrix}
+\frac{5}{2} \\ 2 \\ -1
+\end{bmatrix} + b . \begin{bmatrix}
+-2 \\ 0 \\ 5
+\end{bmatrix} = 0
+\]
+\[
+\frac{5}{2}a - 2b = 0
+\]
+\[
+2a  = 0
+\]
+\[
+-a + 5b = 0
+\]
+Substituting
+\[
+a = 0
+\]
+we get
+\[
+ 0 + 5.b =0
+\]
+This gives
+\[
+a = 0, b = 0
+\]
+This shows that $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are linearly independent.
+
+
+(b) Give a parametric form for the plane $\mathcal{P}$ from (a).
+
+The plane consists of all vectors of the form
+\[
+P + t\overrightarrow{PQ}+t^\prime\overrightarrow{PR} 
+\]
+for scalars t and t'
+\[
+\begin{bmatrix}
+3 \\ -2 \\ 5
+\end{bmatrix} + t \begin{bmatrix}
+\frac{5}{2} \\ 2 \\ -1
+\end{bmatrix} + t^\prime \begin{bmatrix}
+-2 \\ 0 \\ 5
+\end{bmatrix}
+\]
+The parametric form of equation is
+\[
+X =
+\begin{bmatrix}
+    3+\frac{5}{2} t -2 t^\prime \\ 
+    -2 + 2t  \\
+    5 - t + 5 t^\prime \\
+\end{bmatrix}
+\]
