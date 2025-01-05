@@ -26,10 +26,10 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 
-
+% Title Page
 \title{Math 51 Notes}
-\author{Sreeprasad Govindankutty}
-\date{\today}
+\author{Your Name}
+\date{}
 
 \begin{document}
 
@@ -38,20 +38,7 @@
 \newpage
 
 % Chapter 1
-\section{Planes in \mathbb{R}^3}
-
-\subsection{Exercise 3.1}
-\input{exercises/exercise_3_1}
-\subsection{Exercise 3.2}
-\input{exercises/exercise_3_2}
-\subsection{Exercise 3.3}
-\input{exercises/exercise_3_3}
-\subsection{Exercise 3.4}
-\input{exercises/exercise_3_4}
-\subsection{Exercise 3.5}
-\input{exercises/exercise_3_5}
-
-\section{Span, subspaces, and dimension}
+\section{Chapter 1: Title of Chapter 1}
 
 \subsection{Exercise 4.1}
 
@@ -74,10 +61,4 @@
 \input{exercises/exercise_4_6}
 \subsection{Exercise 4.7}
 \includepdf[pages=-]{exercises/exercise_4_7.pdf}
-\subsection{Exercise 4.8}
-\input{exercises/exercise_4_8}
-\subsection{Exercise 4.9}
-\input{exercises/exercise_4_9}
-\subsection{Exercise 4.10}
-\input{exercises/exercise_4_10}
 \end{document}
