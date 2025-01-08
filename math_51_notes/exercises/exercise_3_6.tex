@@ -1,0 +1,122 @@
+Consider the following four points: P=(0,0,0), Q= (0,1,2), R=(1,-2,3), S=(1,0,7)
+\begin{enumerate}
+    \item[(a)] Using difference vectors, show that no three of these points are collinear.\\
+    
+    Solution:
+   \[
+    \vec{PQ}= (0-0, 1-0, 2-0) = (0,1,2)
+    \]
+    \[
+   \vec{PR} = (1,-2,3)
+    \]
+    \[
+   \vec{PS}= (1,0,7)
+    \]
+    For checking the collinearity, check the dot product. If dot product is 0, then the points are collinear.
+  
+
+    \[
+\vec{PQ} \times \vec{PR} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+0 & 1 & 2 \\
+1 & -2 & 3
+\end{vmatrix}
+= \mathbf{i} \begin{vmatrix} 1 & 2 \\ -2 & 3 \end{vmatrix}
+- \mathbf{j} \begin{vmatrix} 0 & 2 \\ 1 & 3 \end{vmatrix}
++ \mathbf{k} \begin{vmatrix} 0 & 1 \\ 1 & -2 \end{vmatrix}
+\]
+\[
+ = i(3+4)-j(0-2)+k(0-1) = 7i+2j-k
+\]
+As
+\[
+\vec{PQ} \times \vec{PR} \neq 0, 
+\]
+$\vec{PQ}$ and $\vec{PR}$ are not collinear
+
+    \[
+\vec{PR} \times \vec{PS} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+1 & -2 & 3 \\
+1 & 0 & 7
+\end{vmatrix}
+= \mathbf{i} \begin{vmatrix} -2 & 3 \\ 0 & 7 \end{vmatrix}
+- \mathbf{j} \begin{vmatrix} 1 & 3 \\ 1 & 7 \end{vmatrix}
++ \mathbf{k} \begin{vmatrix} 1 & -2 \\ 1 & 0 \end{vmatrix} =
+\]
+\[
+i(-14-0)-j(7-3)+k(0+2) = -14i-4j+2k
+\]
+As
+\[
+\vec{PR} \times \vec{PS} \neq 0, 
+\]
+$\vec{PR}$ and $\vec{PS}$ are not collinear
+
+    \[
+\vec{PQ} \times \vec{PS} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+0 & 1 & 2 \\
+1 & 0 & 7
+\end{vmatrix}
+= \mathbf{i} \begin{vmatrix} 1 & 2 \\ 0 & 7 \end{vmatrix}
+- \mathbf{j} \begin{vmatrix} 0 & 2 \\ 1 & 7 \end{vmatrix}
++ \mathbf{k} \begin{vmatrix} 0 & 1 \\ 1 & 0 \end{vmatrix} =
+\]
+\[
+i(7-0)-j(0-2)+k(0-1) = 7i+2j-k
+\]
+As
+\[
+\vec{PQ} \times \vec{PS} \neq 0, 
+\]
+$\vec{PQ}$ and $\vec{PS}$ are not collinear
+    No pair of difference vectors is linearly dependent, so no three points are collinear.
+    \item[(b)] Show that the four points all lie in the same plane in $\mathbb{R}^3$ by finding the equation of such a plane.
+(As a safety measure, you might want to check in private that the four points really lie on that
+plane.)\\
+Solution: \\
+
+The equation of a plane is given by 
+\[
+Ax+By+Cz=D
+\]
+where A,B,C are coefficients of plane's normal vector and D is the constant.
+\[
+\vec{PQ} \times \vec{PR} = 7i+2j-k
+\]
+The normal vector is (7,2,-1)
+Substituting we get 
+\[
+7x+2y-z = D
+\]
+As the plane passes through the point(0,0,0) we can substitute to get D
+\[
+7.0 + 2.0 + -1.0 = D 
+\]
+\[
+D = 0
+\]
+So equation of plane is 
+\[
+7x+2y-z=0
+\]
+Verifying all the points lie on the plane
+Q = (0,1,2)
+\[
+(7.0)+(2.1)-(1.2)= 0
+\]
+R = (1,-2,3)
+\[
+(7.1)+(2.-2)-(1.3)= 7-4-3 = 0
+\]
+R = (1,0,7)
+\[
+(7.1)+(2.0)-(1.7)= 7-7 = 0
+\]
+All points satisfy the equation, so they lie on the same plane.
+
+\end{enumerate}
